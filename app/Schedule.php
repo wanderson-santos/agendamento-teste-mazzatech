@@ -18,11 +18,11 @@ class Schedule extends Model
      */
     public function doctor()
     {
-    	return $this->belongsTo('\App\Doctor', 'doctor_id')->withtrashed();
+    	return $this->belongsTo('\App\Doctor', 'doctor_id')->withTrashed();
     }
 
     public function patient()
     {
-    	return $this->belongsTo('\App\Patient', 'patient_id')->withtrashed();
+    	return $this->belongsTo('\App\Patient', 'patient_id')->withTrashed();
     }
 }
