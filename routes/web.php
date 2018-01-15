@@ -51,6 +51,7 @@ Route::group(['middleware' => 'auth'], function(){
         Route::get('{schedule}/delete', 'ScheduleController@delete');
         Route::post('{schedule}/delete', 'ScheduleController@destroy');
     });
+});
 
     Route::group(['prefix' => 'usuarios'], function(){
         Route::get('', 'UsersController@index');
@@ -62,7 +63,6 @@ Route::group(['middleware' => 'auth'], function(){
         Route::get('{user}/delete', 'UsersController@delete');
         Route::post('{user}/delete', 'UsersController@destroy');
     });
-});
 
 Route::group(['prefix' => '/api/v1', 'namespace' => 'Api'], function(){
     Route::group(['prefix' => 'doctor'], function(){
