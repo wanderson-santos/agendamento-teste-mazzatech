@@ -20,6 +20,9 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
+            $table->softDeletes();
+            $table->text('deleted_reason')->nullable();
+            $table->integer('deleted_user')->nullable();
         });
     }
 

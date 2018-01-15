@@ -5,5 +5,9 @@
 // Variables
 @import "variables";
 
+// General
+@import "general";
+
 // Bootstrap
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
+@import url("https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css");

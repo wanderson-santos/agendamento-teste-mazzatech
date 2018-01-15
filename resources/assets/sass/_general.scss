@@ -1,0 +1,20 @@
+#conteudo {
+	min-height: 500px;
+}
+
+.footer {
+	width: 100%;
+	background: #f8f8f8;
+	border: 1px solid #e7e7e7;
+	height: 4em;
+	text-align: center;
+	
+	.container {
+		padding: 18px;
+	}
+}
+
+.title {
+	text-transform: uppercase;
+	text-weight: bold;
+}
